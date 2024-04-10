@@ -25,6 +25,24 @@ header {
     flex-grow: 1;
 }
 
+.header-site-title h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-site-title__web {
+    font-size: 64px;
+}
+
+.header-site-title__desc {
+    font-size: 18px;
+}
+
+.header-site-title h1 span {
+    width: 100%;
+}
+
 nav {
     flex-grow: 0;
     display: grid;
@@ -79,7 +97,21 @@ section {
     justify-content: space-between;
     gap: 50px;
     flex-grow: 1;
-    background: grey;
+    background: #c7c7c7;
+}
+
+.section-welcome-element-header {
+    font-size: 32px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid grey;
+    width: 100%;
+    color: grey;
+}
+
+.section-welcome-element-paragraph {
+    font-size: 18px;
+    color: grey;
+    line-height: 30px;
 }
 
 .section-my-works {
@@ -89,19 +121,48 @@ section {
 }
 
 .section-my-works h2 {
-    font-size: 128px;
+    font-size: 196px;
     color: grey;
 }
 
 .section-my-works-images {
     width: 100%;
-    max-width: 600px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 50px;
     flex-grow: 1;
+}
+
+.section-my-works-images-element {
+    max-width: 284px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    gap: 12px;
+}
+
+.section-my-works-images-element-img-box {
+    border: 1px solid #c7c7c7;
+    padding: 5px;
+}
+
+.section-my-works-images-element h3 {
+    margin-top: 12px;
+    font-size: 24px;
+    color: grey;
+}
+
+.section-my-works-images-element p {
+    margin-top: 12px;
+}
+
+.section-my-works-images-element a {
+    margin-top: 12px;
+    text-decoration: none;
+    color: #9a9aff;
 }
 
 footer {
@@ -120,7 +181,7 @@ footer {
 }
 
 .footer-copyrights {
-    padding: 50px;
+    padding: 50px 50px 100px 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -129,5 +190,50 @@ footer {
     background: grey;
 }
 
+.footer-media-about-image-box img {
+    float: left;
+    margin: 15px;
+}
 
+.footer-media-about-image-box p {
+    line-height: 30px;
+}
 
+.footer-media-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-media-gallery-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+}
+
+.footer-media-gallery-box img {
+    width: 80px;
+    height: 80px;
+}
+
+.footer-section-header {
+    font-size: 32px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+.footer-section-contact ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.linked-in-anchor {
+    color: #8a8ae1;
+    text-decoration: none;
+}
