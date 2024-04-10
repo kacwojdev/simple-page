@@ -104,6 +104,7 @@ section {
 .section-welcome-element-header {
     font-size: 32px;
     margin-bottom: 20px;
+    padding-bottom: 10px;
     border-bottom: 1px solid grey;
     width: 100%;
     color: grey;
@@ -222,6 +223,7 @@ footer {
 
 .footer-section-header {
     font-size: 32px;
+    padding-bottom: 10px;
     margin-bottom: 20px;
     border-bottom: 1px solid white;
     width: 100%;
