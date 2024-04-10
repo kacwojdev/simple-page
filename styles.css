@@ -1,0 +1,133 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background: black;
+    color: white;
+    padding: 50px;
+}
+
+.header-site-title {
+    flex-grow: 1;
+}
+
+nav {
+    flex-grow: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav li a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: white;
+}
+
+nav li a:hover {
+    color: grey;
+}
+
+.nav-link__title {
+    width: 100%;
+    font-size: 32px;
+}
+
+.nav-link__desc {
+    width: 100%;
+    font-size: 18px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    width: 100%;
+    padding: 50px;
+}
+
+.section-welcome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    flex-grow: 1;
+    background: grey;
+}
+
+.section-my-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-my-works h2 {
+    font-size: 128px;
+    color: grey;
+}
+
+.section-my-works-images {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    flex-grow: 1;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color: white;
+}
+
+.footer-media {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 50px;
+}
+
+.footer-copyrights {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 50px;
+    background: grey;
+}
+
+
+
